@@ -1,0 +1,39 @@
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+}
+p {
+    color:darkslategray;
+    font-style:italic;
+}
+blockquote {
+    font-weight: bold;
+}
+.title {
+    color: black;
+    text-decoration: underline;
+}
+section>span {
+    text-align: center;
+}
+li {
+    line-height:150%;
+}
+#toph {
+    letter-spacing: 15px;
+}
+a>button {
+    text-decoration: none;
+    color:red;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+a {
+    color:red
+}
