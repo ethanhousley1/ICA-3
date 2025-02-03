@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/styles-2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Webpage</title>
+</head>
+<body>
+    <br><br><br><br><br>
+    <h1 style="text-align: center;">Learning about Z-Index with Ethan.</h1>
+    <br><br><br><br><br>
+    <h2>I'm going to teach you about z-indexing.</h2>
+    <br><br><br><br><br>
+    <h2>Let's say you have an image of the greatest center of all time.</h2>
+    <img src="https://www.latimes.com/includes/projects/img/lakers/bio_photos/shaquille_oneal.jpg">
+
+    <br><br><br><br><br>
+    <h2>Here's his plaque.</h2>
+    <div class="plaque">
+        <h3 id="shaq">Shaq</h3>
+    </div>
+    <textarea style='height: 250px; width: 350px;'>
+
+        .plaque {
+            background-color: gold;
+            box-sizing: border-box;
+            width: 150px;
+            height: 100px;
+            padding: 10px;
+            border: 10px solid black;
+        }
+
+        #shaq {
+            color: black;
+            position:absolute;
+            border: 10px solid black;
+            z-index: 1;
+            background-color: gold;
+        
+        }
+    </textarea>
+    <br><br><br><br><br>
+    <h2>Here comes a new center...</h2>
+    <img src="https://cdn.britannica.com/70/244270-050-F6F2B65A/Nikola-Jokic-Denver-Nuggets-2022.jpg?w=300">
+   <h2>Let's put his name on the plaque.</h2>
+   <div class="plaque">
+        <h3 id="shaq">Shaq</h3>
+        <h3 id="jokic">Jokic</h3>
+    </div>
+    <h2>Oh no, Shaq is being covered up!</h2>
+    <h2>lets take a look at the code...</h2>
+    <textarea style="height: 350px; width: 400px">  #shaq {
+        color: black;
+        position:absolute;
+        border: 10px solid black;
+        z-index: 1;
+        background-color: gold;
+    
+    }
+    #jokic {
+        color: red;
+        border: 10px solid black;
+        position:absolute;
+        z-index: 2;
+    }</textarea>
+    <h2>If we change Shaq's z-index to a higher number, it will show up above Jokic!</h2>
+    <h2>Let's change it to 61 (Shaq's game high).</h2>
+    <div class="plaque">
+        <h3 id="shaq" style="z-index: 61;">Shaq</h3>
+        <h3 id="jokic">Jokic</h3>
+    </div>
+    <br>
+    <textarea style="height: 100px; width: 500px">
+    <div class="plaque">
+        <h3 id="shaq" style="z-index: 61;">Shaq</h3>
+        <h3 id="jokic">Jokic</h3>
+    </div>    
+    </textarea>
+    <br>
+    <h2>Here's a visual representation of how Z-Index works.</h2>
+    <img src="../img/z-index-image.png" height="350px">
+</body>
+</html>
