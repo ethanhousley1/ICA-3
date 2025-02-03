@@ -2,7 +2,7 @@ body {
     background-color: #9FD98f;
     color: #7D189C;
 }
-#shaq {
+.shaq {
     color: black;
     position:absolute;
     border: 10px solid black;
@@ -10,7 +10,7 @@ body {
     background-color: gold;
 
 }
-#jokic {
+.jokic {
     color: red;
     border: 10px solid black;
     position:absolute;
